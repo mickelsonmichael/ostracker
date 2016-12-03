@@ -1,4 +1,4 @@
-﻿@model List<Tools.Models.Skills.SkillData>
+﻿@model List<OSTracker.Models.SkillsHelper.SkillData>
 @{
     ViewBag.Title = "Skills";
 }
@@ -20,7 +20,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (Tools.Models.Skills.SkillData skill in Model)
+                    @foreach (OSTracker.Models.SkillsHelper.SkillData skill in Model)
                     {
                         <tr>
                             <td>@skill.name</td>

@@ -48,7 +48,7 @@ namespace OSTracker.Models
     #endregion
 		
 		public RunescapeDataContext() : 
-				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["RunescapeConnectionString1"].ConnectionString, mappingSource)
+				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["RunescapeConnectionString"].ConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

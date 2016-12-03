@@ -58,11 +58,11 @@ namespace OSTracker
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "780858975721-ihneubmes5gcpgid2f3449b2479oei6o.apps.googleusercontent.com",
+                ClientSecret = "KpyWRx8-GGApdGfisaHjjkgb"
+            });
         }
     }
 }

@@ -17,8 +17,59 @@
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
-input,
+/*input,
 select,
 textarea {
     max-width: 280px;
+}*/
+
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
 }
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+
+table .progress {
+    margin-bottom: 0;
+}
+
+.table > tbody > tr > td {
+    vertical-align: middle;
+}
+
+.questChk {
+        display: none;
+    }
+
+    .questChk+label {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .questChk+label:before {
+        position: relative;
+        top: 1px;
+        display: inline-block;
+        font-family: 'Glyphicons Halflings';
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        cursor: pointer;
+        content: "\e157";
+
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; 
+    }
+
+    .questChk:checked+label:before {
+        content: '\e067';
+    }
