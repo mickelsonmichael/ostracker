@@ -25,6 +25,7 @@ namespace OSTracker
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/icomoon.css",
                       "~/Content/site.css"));
         }
     }
